@@ -249,6 +249,7 @@ footer .footer-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .social-media-icons .icon-container svg {
