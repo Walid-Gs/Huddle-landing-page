@@ -1,0 +1,445 @@
+:root {
+  /* propary colors */
+  --Pink: hsl(322, 100%, 66%);
+
+  /* neutral colors */
+  --Very-Pale-Cyan: rgb(235, 251, 255);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+
+  /* basic styles */
+  --headding-font: "Poppins", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+}
+
+/* universal selector */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--body-font);
+  background-color: white;
+}
+
+/* styling the header section */
+header {
+  width: 100%;
+  max-height: 820px;
+  background-color: var(--Very-Pale-Cyan);
+  background-image: url(/images/bg-hero-desktop.svg);
+  padding: 3rem 7rem;
+}
+
+/* pripary-btn styles */
+.btn {
+  font-family: var(--body-font);
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white;
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.308);
+  text-align: center;
+  cursor: pointer;
+}
+
+/* styling th nav-bar */
+.nav-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar button {
+  transition: all 0.15s ease;
+}
+
+.nav-bar button:hover {
+  color: var(--Grayish-Blue);
+}
+
+/* pripary-btn styles */
+.btn {
+  font-family: var(--body-font);
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white;
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.308);
+  text-align: center;
+}
+
+/* hero section */
+.hero-section {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero-section .informations {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.informations h1 {
+  max-width: 400px;
+  font-family: var(--headding-font);
+  font-weight: 600;
+  color: var(--Very-Dark-Cyan);
+}
+.informations p {
+  max-width: 550px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--Very-Dark-Cyan);
+  margin: 1.5rem 0 2rem 0;
+}
+.informations button {
+  color: var(--Very-Pale-Cyan);
+  background-color: var(--Pink);
+  transition: all 0.15s ease;
+}
+.informations button:hover {
+  background-color: hsl(322, 96%, 82%);
+}
+
+.hero-section .hero-image-container {
+  width: 50%;
+}
+.hero-image-container .hero-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* styling the main  */
+.global-container {
+  width: 100%;
+  padding: 8rem 7rem 15rem 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.global-container .container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  height: 400px;
+}
+
+.container .description {
+  width: 50%;
+}
+.container .section-image-container {
+  width: 50%;
+  height: 100%;
+}
+
+.section-image-container .section-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.container .description h2 {
+  font-family: var(--headding-font);
+  font-weight: 600;
+  color: var(--Very-Dark-Cyan);
+  margin-bottom: 1rem;
+}
+.container .description p {
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+  max-width: 450px;
+}
+
+.global-container .flowing-container {
+  flex-direction: row-reverse;
+}
+
+/* footer styles */
+footer {
+  background-color: var(--Very-Dark-Cyan);
+  color: var(--Very-Pale-Cyan);
+  font-size: 16px;
+  padding: 2rem 8rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+footer > svg {
+  margin: 9rem 0 2rem 0;
+}
+
+footer .footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-container .contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contacts svg {
+  margin-right: 10px;
+}
+
+.contacts .location {
+  display: flex;
+
+  max-width: 380px;
+}
+
+.footer-container :is(.nav-1, .nav-2) {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-container a {
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--Very-Pale-Cyan);
+}
+.footer-container a:hover {
+  text-decoration: underline 1.5px solid var(--Very-Pale-Cyan);
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media-icons .icon-container {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--Very-Pale-Cyan);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-icons .icon-container svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+}
+
+.icon-container:hover {
+  border-color: var(--Grayish-Blue);
+}
+.icon-container:hover svg {
+  fill: var(--Grayish-Blue);
+}
+
+footer p.copy-right {
+  margin-top: 2rem;
+  font-size: 16px;
+  align-self: end;
+}
+
+.community {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 1rem 3rem 1rem;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: -30%;
+  left: 25%;
+}
+.community h2 {
+  color: var(--Very-Dark-Cyan);
+  font-family: var(--headding-font);
+  font-weight: 600;
+}
+
+.community button {
+  color: var(--Very-Pale-Cyan);
+  background-color: var(--Pink);
+  transition: all 0.15s ease;
+}
+.community button:hover {
+  background-color: hsl(322, 96%, 82%);
+}
+
+/* responsive design */
+
+@media only screen and (max-width: 1000px) {
+  header {
+    padding: 2rem 2rem;
+  }
+
+  footer {
+    padding: 2rem 2rem;
+  }
+
+  .global-container {
+    padding: 3rem 1rem 15rem 1rem;
+
+    gap: 40px;
+  }
+
+  .community {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    background-image: url(/images/bg-hero-mobile.svg);
+    max-height: min-content;
+  }
+  .hero-section {
+    margin-top: 7rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .hero-section .informations {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .informations h1 {
+    text-align: center;
+  }
+  .informations p {
+    text-align: center;
+  }
+
+  .hero-section .hero-image-container {
+    width: 100%;
+  }
+  .hero-image-container .hero-image {
+    object-fit: contain;
+  }
+  .community {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .global-container .container {
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem;
+    height: min-content;
+  }
+
+  .container .description {
+    width: 100%;
+  }
+  .container .section-image-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container .description h2 {
+    text-align: center;
+  }
+  .container .description p {
+    text-align: center;
+  }
+
+  footer .footer-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .contacts {
+    margin-bottom: 3rem;
+  }
+  .social-media-icons {
+    margin-top: 3rem;
+    align-self: center;
+  }
+  footer p.copy-right {
+    align-self: center;
+  }
+
+  .community {
+    top: -15%;
+  }
+
+  .nav-bar .btn {
+    font-size: 14px;
+    font-weight: 600;
+    background-color: white;
+    padding: 0.5rem 2rem;
+  }
+  .nav-bar .logo-image {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .informations h1 {
+    max-width: 400px;
+    font-size: 24px;
+  }
+  .informations p {
+    font-size: 16px;
+  }
+  .informations .btn {
+    padding: 0.7rem 3.5rem;
+  }
+  .community h2 {
+    font-size: 18px;
+  }
+
+  .community button {
+    padding: 0.7rem 3rem;
+    font-size: 14px;
+  }
+  footer p.copy-right {
+    font-size: 14px;
+  }
+}
